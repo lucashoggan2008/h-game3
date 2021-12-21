@@ -43,8 +43,8 @@ class Player:
         return self.servers.stealServerSkill(ip, self.hackLvl)
     def stealServerMoney(self, ip):
         return self.servers.stealServerMoney(ip, self.hackLvl)
-    def formatGetNodes(self, ip):
-        nodes = self.servers.getNodes(ip)
+    def formatGetNodes(self):
+        nodes = self.servers.getNodes(self.curSystemIp)
         tempList = []
         for x in nodes:
             tempList.append({

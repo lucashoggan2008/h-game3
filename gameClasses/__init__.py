@@ -54,6 +54,7 @@ class Server:
 
 class Node:
     def __init__(self, name, port, hackLvl):
+        self.setDefaultVars()
         self.name = name
         self.port = port
         self.hackLvl = hackLvl
